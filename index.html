@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>광고잇다 | 회사 소개</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Pretendard", "Noto Sans KR", sans-serif;
+      color: #111;
+      background: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+    }
+
+    .logo span {
+      color: #1e6bff;
+    }
+
+    .menu a {
+      margin-left: 24px;
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+      font-weight: 500;
+    }
+
+    .menu a:hover {
+      color: #1e6bff;
+    }
+
+    section {
+      padding: 90px 24px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #f5f8ff, #ffffff);
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 span {
+      color: #1e6bff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #555;
+      max-width: 620px;
+      margin-bottom: 36px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 26px;
+      background: #1e6bff;
+      color: #fff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .section-title {
+      font-size: 36px;
+      margin-bottom: 18px;
+    }
+
+    .section-desc {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 40px;
+      max-width: 720px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .card {
+      padding: 30px;
+      border: 1px solid #eee;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 16px;
+    }
+
+    .blue-bg {
+      background: #f5f8ff;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .stat-box {
+      padding: 32px;
+      border-radius: 20px;
+      background: #fff;
+      text-align: center;
+      border: 1px solid #eee;
+    }
+
+    .stat-box strong {
+      display: block;
+      font-size: 36px;
+      color: #1e6bff;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      padding: 40px 24px;
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: none;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+
+      .grid,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 70px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">광고<span>잇다</span></div>
+      <div class="menu">
+        <a href="#about">소개</a>
+        <a href="#product">제품</a>
+        <a href="#result">실적</a>
+        <a href="#contact">문의</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>광고와 사람을<br><span>가장 쉽게 잇다</span></h1>
+      <p>
+        광고잇다는 브랜드와 인플루언서, 콘텐츠 제작자, 광고 서비스를
+        더 쉽고 투명하게 연결하는 마케팅 플랫폼입니다.
+      </p>
+      <a href="#contact" class="btn">문의하기</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">회사 소개</h2>
+      <p class="section-desc">
+        광고잇다는 광고가 필요한 브랜드와 자신만의 영향력을 가진 사람들을 연결합니다.
+        단순한 홍보를 넘어, 브랜드가 더 많은 사람에게 닿을 수 있도록 돕습니다.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>브랜드 연결</h3>
+          <p>광고주가 원하는 조건에 맞는 인플루언서와 서비스를 쉽게 찾을 수 있습니다.</p>
+        </div>
+        <div class="card">
+          <h3>투명한 정보</h3>
+          <p>성과, 견적, 콘텐츠 스타일을 한눈에 비교할 수 있는 구조를 지향합니다.</p>
+        </div>
+        <div class="card">
+          <h3>성과 중심</h3>
+          <p>팔로워 수보다 실제 반응과 콘텐츠 퀄리티를 중심으로 연결합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="product" class="blue-bg">
+    <div class="container">
+      <h2 class="section-title">제품 / 서비스</h2>
+      <p class="section-desc">
+        광고잇다는 소상공인, 브랜드, 인플루언서 모두가 더 쉽게 광고를 시작할 수 있는 서비스를 제공합니다.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>인플루언서 매칭</h3>
+          <p>브랜드가 직접 인플루언서를 검색하고 조건에 맞는 협업을 제안할 수 있습니다.</p>
+        </div>
+        <div class="card">
+          <h3>콘텐츠 광고</h3>
+          <p>릴스, 숏폼, 블로그, 피드 등 다양한 SNS 콘텐츠 제작을 연결합니다.</p>
+        </div>
+        <div class="card">
+          <h3>광고 서비스 연결</h3>
+          <p>행사, 체험단, 콘텐츠 제작자 등 광고에 필요한 다양한 서비스를 연결합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="result">
+    <div class="container">
+      <h2 class="section-title">실적</h2>
+      <p class="section-desc">
+        아래 수치는 예시입니다. 실제 운영 수치에 맞게 수정해서 사용하면 됩니다.
+      </p>
+
+      <div class="stats">
+        <div class="stat-box">
+          <strong>100+</strong>
+          <p>협업 콘텐츠</p>
+        </div>
+        <div class="stat-box">
+          <strong>50+</strong>
+          <p>협력 브랜드</p>
+        </div>
+        <div class="stat-box">
+          <strong>1M+</strong>
+          <p>누적 조회수</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="blue-bg">
+    <div class="container">
+      <h2 class="section-title">문의하기</h2>
+      <p class="section-desc">
+        광고 제휴, 인플루언서 등록, 서비스 문의는 아래 연락처로 편하게 문의해 주세요.
+      </p>
+
+      <div class="card">
+        <h3>광고잇다</h3>
+        <p>이메일: contact@aditda.com</p>
+        <p>인스타그램: @aditda</p>
+        <p>카카오톡: 광고잇다</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    ⓒ 2026 광고잇다. All rights reserved.
+  </footer>
+
+</body>
+</html>]
